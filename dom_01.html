@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<title>Extjs - manipulating the DOM </title>
+    <script src="../ext-5.1.1/build/ext-all.js"></script>
+    <script type="text/javascript">
+    	Ext.onReady(function(){
+			var mymainDiv = Ext.get('main'); 
+			var mysecondDiv = Ext.dom.Element.get('second');
+			mymainDiv.setStyle({
+			  width   : "100px",
+			  height  : "100px",
+			  border  : "2px solid #444",
+			  margin  : "80px auto",
+			  backgroundColor : "#ccc"
+			});
+		});    
+    </script>  
+</head>
+<body style="padding:10px;"> 
+	<div id="main"></div>
+    <div id="second"></div>
+</body>
+</html>
